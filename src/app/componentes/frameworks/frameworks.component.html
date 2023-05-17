@@ -1,0 +1,20 @@
+<div class="container">
+
+  <div class="row mt-4">
+    <div class="col-md-5 mx-auto">
+
+      <h1>Lista de Frameworks</h1>
+
+      <div class="input-group">
+        <input type="text" class="form-control" [(ngModel)]="service.course" placeholder="Ingrese el framework">
+        <button class="btn btn-primary" (click)="onNewCourse()">Agregar</button>
+      </div>
+
+      <ul class="list-group mt-4">
+        <li class="list-group-item" *ngFor="let c of courses">{{ c }}</li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
